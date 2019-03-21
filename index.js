@@ -3,18 +3,11 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const exphbs = require('express-handlebars');
 const app = express();
-const rawdata = [
-    {connections: 0}
-];
 var connections = 0;
 app.use(helmet.xssFilter());
 app.engine('handlebars', exphbs());
-app.get('/raw', (request, response) => {
-    response.send(rawdata);
-});
 app.get('/count', (request, response) => {
     connections++;
-    rawdata[1].connections += 1;
     response.redirect('/');
     });
 app.set('view engine', 'handlebars');
