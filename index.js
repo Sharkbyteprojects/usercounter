@@ -1,8 +1,10 @@
 const express = require('express');
 const morgan = require('morgan');
+const helmet = require('helmet');
 const exphbs = require('express-handlebars');
 const app = express();
 var connections = 0;
+app.use(helmet());
 app.engine('handlebars', exphbs());
 app.get('/count', (request, response) => {
     connections++;
