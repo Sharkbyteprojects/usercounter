@@ -11,6 +11,9 @@ app.get('/count', (request, response) => {
     connectionslst[1].connections + 1;
     connections++;
     });
+app.get('/raw', (request, response) => {
+        response.send(connectionslst);
+        });
 app.set('view engine', 'handlebars');
 app.use(morgan('common', { immediate: true }));
 app.get('/', (request, response) => {
