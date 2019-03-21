@@ -1,3 +1,4 @@
+[![Gitter](https://badges.gitter.im/Sharkbyteprojects/usercounter.svg)](https://gitter.im/Sharkbyteprojects/usercounter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 # Sharkconncount
 
 TO COUNT: Server IP + /count
