@@ -4,7 +4,7 @@ const helmet = require('helmet');
 const exphbs = require('express-handlebars');
 const app = express();
 var connections = 0;
-app.use(helmet());
+app.use(helmet.xssFilter());
 app.engine('handlebars', exphbs());
 app.get('/count', (request, response) => {
     connections++;
