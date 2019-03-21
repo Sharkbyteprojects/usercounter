@@ -8,9 +8,6 @@ app.get('/count', (request, response) => {
     connections++;
     response.redirect('/');
     });
-app.get('/raw', (request, response) => {
-        response.send(connections);
-        });
 app.set('view engine', 'handlebars');
 app.use(morgan('common', { immediate: true }));
 app.get('/', (request, response) => {
