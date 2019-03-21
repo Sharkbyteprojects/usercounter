@@ -1,0 +1,26 @@
+{
+  "name": "user-counter",
+  "version": "1.0.0",
+  "description": "Count calls",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sharkbyteprojects/usercounter.git"
+  },
+  "author": "Sharkbyteprojects",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sharkbyteprojects/usercounter/issues"
+  },
+  "homepage": "https://github.com/Sharkbyteprojects/usercounter#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2",
+    "handlebars": "^4.1.1",
+    "morgan": "^1.9.1"
+  }
+}
