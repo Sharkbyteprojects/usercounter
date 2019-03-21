@@ -2,17 +2,14 @@ const express = require('express');
 const morgan = require('morgan');
 const exphbs = require('express-handlebars');
 const app = express();
-let connectionslst = [
-    {connections: 0}
-];
 var connections = 0;
 app.engine('handlebars', exphbs());
 app.get('/count', (request, response) => {
-    connectionslst[1].connections + 1;
     connections++;
+    response.redirect('/');
     });
 app.get('/raw', (request, response) => {
-        response.send(connectionslst);
+        response.send(connections);
         });
 app.set('view engine', 'handlebars');
 app.use(morgan('common', { immediate: true }));
