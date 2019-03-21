@@ -15,3 +15,8 @@ HTML Examlecounter (IF YOUR SERVER IP = serverip):
 # API: 
 - [API Documentation](https://documenter.getpostman.com/view/6963541/S17qUALk)
 - [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/6c3acfbb8203390d5db1)
+
+---
+# License
+- [dependencies](https://github.com/Sharkbyteprojects/usercounter/network/dependencies)
+- [License](https://github.com/Sharkbyteprojects/usercounter/blob/master/LICENSE)
