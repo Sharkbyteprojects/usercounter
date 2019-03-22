@@ -14,8 +14,7 @@ app.get('/count', (request, response) => {
     response.redirect('/');
     });
 app.get('/raw', (request, response) => {
-    connections++;
-    response.redirect('/');
+    response.send(jsonraw);
     });
 app.set('view engine', 'handlebars');
 app.use(morgan('common', { immediate: true }));
