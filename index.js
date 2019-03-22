@@ -5,7 +5,10 @@ const exphbs = require('express-handlebars');
 const app = express();
 var connections = 0;
 const jsonraw = [
-  { connections: 0, github: 'https://github.com/Sharkbyteprojects/usercounter', docker: 'https://hub.docker.com/r/shark2byte/usercounter' }
+  { name: 'github', url: 'https://github.com/Sharkbyteprojects/usercounter' },
+  {name: 'docker', url: 'https://hub.docker.com/r/shark2byte/usercounter'},
+  {name: 'npm', url: 'https://www.npmjs.com/package/user-counter'},
+  {name: 'postman api', url: 'https://documenter.getpostman.com/view/6963541/S17qUALk'}
 ];
 app.use(helmet.xssFilter());
 app.engine('handlebars', exphbs());
@@ -13,7 +16,7 @@ app.get('/count', (request, response) => {
     connections++;
     response.redirect('/');
     });
-app.get('/raw', (request, response) => {
+app.get('/repos', (request, response) => {
     response.send(jsonraw);
     });
 app.set('view engine', 'handlebars');
