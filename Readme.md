@@ -1,4 +1,4 @@
-![](https://david-dm.org/Sharkbyteprojects/usercounter.svg)[![Gitter](https://badges.gitter.im/Sharkbyteprojects/usercounter.svg)](https://gitter.im/Sharkbyteprojects/usercounter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+![](https://david-dm.org/Sharkbyteprojects/usercounter.svg)[![Gitter](https://badges.gitter.im/Sharkbyteprojects/usercounter.svg)](https://gitter.im/Sharkbyteprojects/usercounter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)![Build Complete](https://fire-engine-icons.github.io/stable-unstable/new%20build.svg)
 # USERCOUNTER (LTS)
 
 TO COUNT: Server IP + /count
