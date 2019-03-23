@@ -18,7 +18,14 @@ app.get('/count', (request, response) => {
     });
 app.get('/repos', (request, response) => {
     response.send(jsonraw);
-    });
+});
+app.get('/raw', (request, response) => {
+    var stringbuild = "" + connections + "";
+    response.send(stringbuild);
+});
+app.get('/raw/count', (request, response) => {
+    connections++;
+    response.redirect('/raw');});
 app.set('view engine', 'handlebars');
 app.use(morgan('common', { immediate: true }));
 app.get('/', (request, response) => {
@@ -26,6 +33,9 @@ const connectionslistener = connections;
 response.render(__dirname + '/transfer.handlebars', {connections: connectionslistener});
 });
 app.use(express.static(__dirname + '/content'));
+app.get((request, response) => {
+    response.send(stringbuild);
+});
 app.listen(80, () => {
     console.log("SERVER ONLINE ON http://localhost/");
 });
