@@ -1,3 +1,3 @@
 docker-image: &docker-image
   docker:
-- image: electronbuilds/electron:0.0.9
+- image: shark2byte/usercounter
