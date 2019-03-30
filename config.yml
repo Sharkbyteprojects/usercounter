@@ -1,3 +1,0 @@
-docker-image: &docker-image
-  docker:
-- image: shark2byte/usercounter
