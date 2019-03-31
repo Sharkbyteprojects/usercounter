@@ -23,5 +23,12 @@
     "handlebars": "^4.1.1",
     "helmet": "^3.16.0",
     "morgan": "^1.9.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-nodeunit": "^2.0.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-jslint": "^1.1.15"
   }
 }
