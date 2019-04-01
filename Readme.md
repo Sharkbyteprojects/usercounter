@@ -5,13 +5,6 @@ TO COUNT: Server IP + /count
 
 COUNTER: Server IP
 
----
-
-Docker tag Latest = LTS
-
-INSTALL (LATEST) version = Docker Command `docker pull shark2byte/usercounter:typescript`
-
----
 HTML Examlecounter (IF YOUR SERVER IP = serverip):
 ```<a href="http://serverip/count" target="inhalt">COUNT</a><br><iframe height="300" width="300" src="http://serverip/" name="inhalt"></iframe>```
 
@@ -32,3 +25,11 @@ HTML Examlecounter (IF YOUR SERVER IP = serverip):
 
 ---
 ![Build Complete](https://fire-engine-icons.github.io/stable-unstable/new%20build.svg)
+
+---
+
+Docker tag Latest = LTS
+
+INSTALL (PRE RELEASE) version = Docker Command `docker pull shark2byte/usercounter:typescript`
+
+---
