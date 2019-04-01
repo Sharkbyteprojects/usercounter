@@ -4,6 +4,6 @@ COPY package*.json ./
 RUN npm install -D
 RUN npm install
 COPY . .
-RUN tsc index.ts
 EXPOSE 80
+CMD [ "tsc", "index.ts"]
 CMD [ "npm", "start" ]
