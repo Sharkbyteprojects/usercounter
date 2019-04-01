@@ -26,3 +26,7 @@ HTML Examlecounter (IF YOUR SERVER IP = serverip):
 
 ---
 ![Build Complete](https://fire-engine-icons.github.io/stable-unstable/new%20build.svg)
+
+---
+
+BUILD WITH `tsc index.ts`
