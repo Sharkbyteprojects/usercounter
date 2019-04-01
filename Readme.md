@@ -9,7 +9,7 @@ COUNTER: Server IP
 
 Docker tag Latest = LTS
 
-INSTALL (LATEST) version = Docker Command `docker pull shark2byte/usercounter:Typescript`
+INSTALL (LATEST) version = Docker Command `docker pull shark2byte/usercounter:typescript`
 
 ---
 HTML Examlecounter (IF YOUR SERVER IP = serverip):
