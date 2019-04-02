@@ -28,8 +28,6 @@ HTML Examlecounter (IF YOUR SERVER IP = serverip):
 
 ---
 
-Docker tag Latest = LTS
+Docker tag Latest LTD = Docker Command `docker pull shark2byte/usercounter`
 
 INSTALL (PRE RELEASE) version = Docker Command `docker pull shark2byte/usercounter:typescript`
-
----
