@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const helmet = require('helmet');
 const exphbs = require('express-handlebars');
 const app = express();
+const connectionsa = require('easy-array_sytem');
+connectionsa.generate({conn: 0});
 var connections = 0;
 const jsonraw = [
   { name: 'github', url: 'https://github.com/Sharkbyteprojects/usercounter' },
@@ -14,6 +16,7 @@ app.use(helmet.xssFilter());
 app.engine('handlebars', exphbs());
 app.get('/count', (request, response) => {
     connections++;
+	connectionsa.changee("0", "conn", eval(`"${connections}"`));
     response.redirect('/');
     });
 app.get('/repos', (request, response) => {
@@ -23,8 +26,17 @@ app.get('/raw', (request, response) => {
     var stringbuild = "" + connections + "";
     response.send(stringbuild);
 });
+app.get('/rawjson', (request, response) => {
+    response.send(connectionsa.readall());
+});
+app.get('/rawjson/count', (request, response) => {
+	connections++;
+	connectionsa.changee("0", "conn", eval(`"${connections}"`));
+    response.redirect('/rawjson');
+});
 app.get('/raw/count', (request, response) => {
     connections++;
+	connectionsa.changee("0", "conn", eval(`"${connections}"`));
     response.redirect('/raw');});
 app.set('view engine', 'handlebars');
 app.use(morgan('common', { immediate: true }));
