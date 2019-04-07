@@ -1,6 +1,6 @@
 {
   "name": "user-counter",
-  "version": "4.0.0",
+  "version": "6.0.0",
   "description": "Count calls",
   "main": "index.js",
   "scripts": {
