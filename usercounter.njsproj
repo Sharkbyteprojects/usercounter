@@ -29,10 +29,8 @@
     <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="gulpfile.js" />
     <Compile Include="index.js" />
-    <Compile Include="Gruntfile.js">
-      <SubType>Code</SubType>
-    </Compile>
     <Content Include="alternate.handlebars">
       <SubType>Code</SubType>
     </Content>
@@ -43,7 +41,6 @@
     <Content Include="README.md" />
     <Content Include="content\ico.png" />
     <Content Include="transfer.handlebars" />
-    <Content Include="gulpfile.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\" />
