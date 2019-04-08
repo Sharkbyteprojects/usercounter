@@ -12,6 +12,7 @@ const jsonraw = [
 ];
 app.use(helmet.xssFilter());
 app.engine('handlebars', exphbs());
+app.use(morgan('common', { immediate: true }));
 app.get('/count', (request, response) => {
     connections++;
     response.redirect('/');
@@ -27,7 +28,6 @@ app.get('/raw/count', (request, response) => {
     connections++;
     response.redirect('/raw');});
 app.set('view engine', 'handlebars');
-app.use(morgan('common', { immediate: true }));
 app.get('/', (request, response) => {
 const connectionslistener = connections;
 response.render(__dirname + '/transfer.handlebars', {connections: connectionslistener});
