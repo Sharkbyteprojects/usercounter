@@ -4,8 +4,10 @@
   "description": "Count calls",
   "main": "index.js",
   "scripts": {
-    "test": "node --inspect index.js",
-    "start": "gulp less&&gulp css&&node index.js"
+    "test": "npm run-script gulp&&node --inspect index.js",
+    "prepublish": "npm run-script gulp",
+    "gulp": "gulp less&&gulp css",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
