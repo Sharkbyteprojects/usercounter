@@ -9,6 +9,8 @@ TO COUNT: Server IP + /count
 
 COUNTER: Server IP
 
+Panel for help: Server IP + /panel
+
 ---
 HTML Examlecounter (IF YOUR SERVER IP = serverip):
 ```<a href="http://serverip/count" target="inhalt">COUNT</a><br><iframe height="300" width="300" src="http://serverip/" name="inhalt"></iframe>```
