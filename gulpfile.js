@@ -1,5 +1,5 @@
 //CREATED BY SHARKBYTEPROJECTS
-//
+//COMPILE sheet1.less to all.min.css
 /*Start with the Command :
  * 
  * "npm run-script gulp"
