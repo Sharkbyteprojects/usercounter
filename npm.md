@@ -1,4 +1,4 @@
-![](https://david-dm.org/Sharkbyteprojects/usercounter.svg)[![Gitter](https://badges.gitter.im/Sharkbyteprojects/usercounter.svg)](https://gitter.im/Sharkbyteprojects/usercounter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![DOCKER](https://img.shields.io/docker/cloud/build/shark2byte/usercounter.svg)](https://hub.docker.com/r/shark2byte/usercounter)![](https://david-dm.org/Sharkbyteprojects/usercounter.svg)[![Gitter](https://badges.gitter.im/Sharkbyteprojects/usercounter.svg)](https://gitter.im/Sharkbyteprojects/usercounter?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)[![](https://img.shields.io/appveyor/ci/Sharkbyteprojects/usercounter.svg?label=USERCOUNTER%20BUILD&style=flat-square)](https://ci.appveyor.com/project/Sharkbyteprojects/usercounter)[![Codeship Status for Sharkbyteprojects/usercounter](https://app.codeship.com/projects/674027f0-34f5-0137-9e79-5efde2d3bfe8/status?branch=master)](https://app.codeship.com/projects/332743)![](https://img.shields.io/github/issues/Sharkbyteprojects/usercounter.svg?style=social)
 # USERCOUNTER (LTS)
 
 ## NPM
