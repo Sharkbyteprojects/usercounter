@@ -35,7 +35,7 @@ response.render(__dirname + '/transfer.handlebars', {connections: connectionslis
 app.get('/panel', (request, response) => {
     const connectionslistener = connections;
     response.render(__dirname + '/alternate.handlebars', { connections: connectionslistener });
-});app.get('/help/*', (request, response) => {
+});app.get('/help*', (request, response) => {
     const connectionslistener = connections;
     response.render(__dirname + '/alternate.handlebars', { connections: connectionslistener });
 });
