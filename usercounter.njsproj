@@ -33,10 +33,17 @@
     <Compile Include="Gruntfile.js">
       <SubType>Code</SubType>
     </Compile>
+    <Content Include="alternate.handlebars">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="content\sheet1.less">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="package.json" />
     <Content Include="README.md" />
     <Content Include="content\ico.png" />
     <Content Include="transfer.handlebars" />
+    <Content Include="gulpfile.js" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\" />

@@ -32,6 +32,10 @@ app.get('/', (request, response) => {
 const connectionslistener = connections;
 response.render(__dirname + '/transfer.handlebars', {connections: connectionslistener});
 });
+app.get('/panel', (request, response) => {
+    const connectionslistener = connections;
+    response.render(__dirname + '/alternate.handlebars', { connections: connectionslistener });
+});
 app.use(express.static(__dirname + '/content'));
 app.get((request, response) => {
     response.send(stringbuild);
