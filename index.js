@@ -43,6 +43,10 @@ app.use(express.static(__dirname + '/content'));
 app.get((request, response) => {
     response.send(stringbuild);
 });
+app.get('/*', (request, response) => {
+    const urlenc = request.path;
+    response.render(__dirname + '/404.handlebars', { url: urlenc });
+});
 app.listen(80, () => {
     console.log("SERVER ONLINE ON http://localhost/");
 });

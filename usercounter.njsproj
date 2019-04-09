@@ -41,6 +41,7 @@
     <Content Include="README.md" />
     <Content Include="content\ico.png" />
     <Content Include="transfer.handlebars" />
+    <Content Include="404.handlebars" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="content\" />
