@@ -45,6 +45,7 @@ app.get((request, response) => {
 });
 app.get('/*', (request, response) => {
     const urlenc = request.path;
+    response.status(404);
     response.render(__dirname + '/404.handlebars', { url: urlenc });
 });
 app.listen(80, () => {
