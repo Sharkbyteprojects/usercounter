@@ -15,6 +15,7 @@ app.engine('handlebars', exphbs());
 app.use(morgan('common', { immediate: true }));
 app.get('/count', (request, response) => {
     connections++;
+    response.status(307);
     response.redirect('/');
     });
 app.get('/repos', (request, response) => {
@@ -26,6 +27,7 @@ app.get('/raw', (request, response) => {
 });
 app.get('/raw/count', (request, response) => {
     connections++;
+    response.status(307);
     response.redirect('/raw');});
 app.set('view engine', 'handlebars');
 app.get('/', (request, response) => {
